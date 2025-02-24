@@ -1,0 +1,179 @@
+/* Navbar */
+.navbar {
+  background: rgba(0, 123, 255, 0.9); /* Cor de fundo da navbar */
+  padding: 12px 0;
+  text-align: center;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando borda sombra */
+}
+
+/* Efeito de borda-sombra mais forte ao rolar a página */
+.navbar.scrolled {
+  background: linear-gradient(135deg, #0052cc, #007bff);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao rolar */
+}
+
+/* Alinhamento dos itens */
+.navbar .navbar-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo dos itens da navbar */
+.navbar .nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Links da Navbar */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* Tamanho do texto igual ao da imagem */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+/* Ícones ao lado do texto */
+.navbar a i {
+  margin-right: 8px;
+}
+
+/* Efeito de hover nos links */
+.navbar a:hover {
+  color: #e6e6e6;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #fcfcfc;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.navbar .dropdown-menu {
+  background-color: #007bff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  display: none;
+  z-index: 1000;
+  padding: 0;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background: #0052cc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navbar .nav-item {
+      margin: 5px 0;
+  }
+
+  .navbar .dropdown-menu {
+      position: static;
+      display: none;
+  }
+
+  .navbar .dropdown.active .dropdown-menu {
+      display: block;
+  }
+}
+
+
+/* Botão Fixo "Acessar" */
+.fixed-button {
+  position: absolute; 
+  bottom: 100px; 
+  right: 20px; 
+  background: linear-gradient(135deg, #0052cc, #007bff); 
+  color: #f5f5f5;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1000; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px; 
+  height: 70px; 
+  overflow: hidden; 
+  white-space: nowrap; 
+}
+
+/* Texto do botão escondido */
+.fixed-button .button-text {
+  opacity: 0; 
+  margin-left: 10px; 
+  transition: opacity 0.3s;
+  display: none;
+}
+
+/* Efeito de hover para mostrar o texto */
+.fixed-button:hover {
+  background: linear-gradient(135deg, #007bff, #0052cc); 
+  transform: translateY(-3px); 
+  width: 160px; 
+  padding: 10px 20px; 
+  border-radius: 25px; 
+  justify-content: flex-start; 
+}
+
+.fixed-button:hover .button-text {
+  opacity: 1; 
+  display: inline; 
+}
+
+.fixed-button i {
+  font-size: 1.2rem;
+}

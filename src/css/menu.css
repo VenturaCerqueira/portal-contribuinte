@@ -1,0 +1,115 @@
+/* Estilos para o container de botões */
+.button-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #007bff; 
+  padding: 20px;
+}
+
+/* Estilos para as linhas de botões */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para os botões */
+.button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; 
+  border: 1px solid #0056b3; 
+  border-radius: 10px;
+  width: 160px; 
+  height: 80px; 
+  text-decoration: none;
+  color: #0056b3; 
+  text-align: center;
+  transition: background 0.3s, border 0.3s;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.button-card:hover {
+  background: #d0e4ff; 
+  border-color: #003d80; 
+}
+
+.button-card i {
+  font-size: 24px; 
+  margin-right: 10px; 
+}
+
+.button-title {
+  margin: 0;
+  font-size: 0.9em;
+  flex-grow: 1; 
+}
+
+.top-accessibility-bar {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #0052cc;           
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 82, 204, 0.3); 
+}
+/* Estilos para o container de botões */
+.button-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  background-color: #007bff; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilos para as linhas de botões */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para os botões */
+.button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; 
+  border: 1px solid #0056b3; 
+  width: 160px; 
+  height: 80px; 
+  text-decoration: none;
+  color: #0056b3;
+  text-align: center;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+}
+
+.button-card:hover {
+  background: #d0e4ff; 
+  border-color: #003d80; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.button-card i {
+  font-size: 24px; 
+  margin-right: 10px;
+}
+
+.button-title {
+  margin: 0;
+  font-size: 0.9em;
+  flex-grow: 1;  
+}
+
+/* Estilos para o container do card */
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  background: #ffffff;
+}

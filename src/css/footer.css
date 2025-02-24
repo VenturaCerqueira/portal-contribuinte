@@ -1,0 +1,40 @@
+/* .footer */
+.footer {
+  background: white;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #0056b3; /* Cor do texto ao passar o mouse */
+}
+
+.footer .social-links a {
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.footer .social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade para o footer */
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px 0;
+      font-size: 12px;
+  }
+
+  .footer .social-links a {
+      font-size: 18px;
+      margin: 0 8px;
+  }
+}
