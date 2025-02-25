@@ -1,4 +1,4 @@
-
+/* Estilos para o container de botões */
 .button-grid-container {
   display: flex;
   flex-direction: column;
@@ -7,14 +7,14 @@
   padding: 20px;
 }
 
-
+/* Estilos para as linhas de botões */
 .button-row {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-
+/* Estilos para os botões */
 .button-card {
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
   font-size: 14px;
   border-bottom: 1px solid rgba(0, 82, 204, 0.3); 
 }
-
+/* Estilos para o container de botões */
 .button-grid-container {
   display: flex;
   flex-direction: column;
@@ -64,14 +64,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-
+/* Estilos para as linhas de botões */
 .button-row {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-
+/* Estilos para os botões */
 .button-card {
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@
   text-align: center;
   transition: background 0.3s, border 0.3s, box-shadow 0.3s;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
 }
 
 .button-card:hover {
@@ -105,6 +105,7 @@
   flex-grow: 1;  
 }
 
+/* Estilos para o container do card */
 .card-container {
   display: flex;
   justify-content: center;
