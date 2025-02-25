@@ -45,11 +45,11 @@
 
 /* Estilos para os links da navbar */
 .navbar .nav-link {
-  color: white; /* Define a cor do texto dos links como branca */
+  color: white; 
 }
 
 .navbar .nav-link:hover {
-  color: #f8f9fa; /* Define a cor do texto dos links ao passar o mouse */
+  color: #f8f9fa; 
 }
 
 
@@ -98,12 +98,12 @@
 
 /* Estilos para os itens do dropdown */
 .navbar .dropdown-menu .dropdown-item {
-  color: black; /* Define a cor do texto dos itens do dropdown como preta */
+  color: black;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa; /* Define a cor de fundo ao passar o mouse */
-  color: black; /* Define a cor do texto ao passar o mouse */
+  background-color: #f8f9fa; 
+  color: black; /
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -123,11 +123,11 @@
 
 /* Estilos para os botões da navbar */
 .navbar .nav-link.dropdown-toggle {
-  color: white; /* Define a cor do texto dos botões como branca */
+  color: white; 
 }
 
 .navbar .nav-link.dropdown-toggle:hover {
-  color: #f8f9fa; /* Define a cor do texto dos botões ao passar o mouse */
+  color: #f8f9fa; 
 }
 
 /* Responsividade */

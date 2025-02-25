@@ -159,26 +159,26 @@ a:focus {
   outline: none; 
 }
 
-/* Adicionando responsividade para evitar que o texto ultrapasse os limites da tela */
+
 .navbar .nav-link,
 .navbar .dropdown-item {
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-  overflow: hidden; /* Oculta o texto que ultrapassa os limites do contêiner */
-  text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa os limites */
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
   .navbar .nav-link,
   .navbar .dropdown-item {
-    white-space: normal; /* Permite que o texto quebre em várias linhas em telas menores */
+    white-space: normal; 
   }
 }
 
-/* Adicionando estilos para garantir que o texto não ultrapasse os limites da tela */
+
 .navbar .nav-item {
-  max-width: 100%; /* Garante que o item da navbar não ultrapasse a largura do contêiner */
+  max-width: 100%; 
 }
 
 .navbar .dropdown-menu {
-  max-width: 100%; /* Garante que o menu dropdown não ultrapasse a largura do contêiner */
+  max-width: 100%; 
 }

@@ -14,14 +14,14 @@ code {
 
 /* Estilos para os botões da navbar */
 .navbar .nav-link {
-  color: white; /* Define a cor do texto dos botões como branca */
+  color: white; 
 }
 
 .navbar .dropdown-menu .dropdown-item {
-  color: black; /* Define a cor do texto dos itens do dropdown como preta */
+  color: black; 
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa; /* Define a cor de fundo ao passar o mouse */
-  color: black; /* Define a cor do texto ao passar o mouse */
+  background-color: #f8f9fa; 
+  color: black; 
 }
