@@ -1,5 +1,4 @@
 /* .custom-header */
-/* Estilos gerais do header */
 .custom-header {
   background: linear-gradient(135deg, #0052cc, #007bff); 
   color: #f5f5f5;
@@ -14,7 +13,7 @@
   padding-bottom: 0 !important;
 }
 
-/* Container de ícones */
+
 .icon-container a {
   text-decoration: none;
   color: #fff;
@@ -24,7 +23,6 @@
 .icon-container a:hover {
   color: #e6e6e6;
 }
-  /* .logo */
   .custom-logo {
     max-height: 80px;
     display: flex;

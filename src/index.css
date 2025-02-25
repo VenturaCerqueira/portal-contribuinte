@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Estilos para os botões da navbar */
+.navbar .nav-link {
+  color: white; /* Define a cor do texto dos botões como branca */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: black; /* Define a cor do texto dos itens do dropdown como preta */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa; /* Define a cor de fundo ao passar o mouse */
+  color: black; /* Define a cor do texto ao passar o mouse */
+}

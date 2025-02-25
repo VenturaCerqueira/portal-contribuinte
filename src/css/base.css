@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; 
 }
 
-/* Consolidar body e html */
 body, html {
   margin: 0;
   padding: 0;
@@ -37,7 +36,7 @@ li {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; /* Centralizar conteúdo */
+  margin: 0 auto;
   padding: 0 15px; 
 }
 
@@ -52,7 +51,6 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 
 @media (max-width: 1200px) {
   .container {
@@ -75,16 +73,11 @@ a:focus, button:focus, input:focus {
   outline-offset: 2px;
 }
 
-
-
-
-
 input:focus, textarea:focus, select:focus, button:focus {
   border-color: #007bff; 
   outline: none; 
 }
 
-/* .form-control-dark consolidada */
 .form-control-dark {
   border-color: var(--bs-gray);
 }
@@ -94,17 +87,14 @@ input:focus, textarea:focus, select:focus, button:focus {
   box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
 }
 
-/* .text-small */
 .text-small {
   font-size: 85%;
 }
 
-/* .dropdown-toggle simplificada */
 .dropdown-toggle:not(:focus) {
   outline: 0;
 }
 
-/* .bd-placeholder-img */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -119,7 +109,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
 }
 
-/* .b-example-divider */
 .b-example-divider {
   width: 100%;
   height: 3rem;
@@ -129,7 +118,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   box-shadow: inset 0 .5em 1.5em rgba(235, 235, 235, 0.945), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-/* .bi e .nav-scroller */
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
@@ -169,4 +157,28 @@ a:hover,
 a:focus {
   color: #007bff; 
   outline: none; 
+}
+
+/* Adicionando responsividade para evitar que o texto ultrapasse os limites da tela */
+.navbar .nav-link,
+.navbar .dropdown-item {
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  overflow: hidden; /* Oculta o texto que ultrapassa os limites do contêiner */
+  text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa os limites */
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link,
+  .navbar .dropdown-item {
+    white-space: normal; /* Permite que o texto quebre em várias linhas em telas menores */
+  }
+}
+
+/* Adicionando estilos para garantir que o texto não ultrapasse os limites da tela */
+.navbar .nav-item {
+  max-width: 100%; /* Garante que o item da navbar não ultrapasse a largura do contêiner */
+}
+
+.navbar .dropdown-menu {
+  max-width: 100%; /* Garante que o menu dropdown não ultrapasse a largura do contêiner */
 }

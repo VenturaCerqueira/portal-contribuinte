@@ -1,15 +1,24 @@
 import React from 'react';
+import './App.css';
 import Navbar from './components/Navbar';
-import LandingPage from './LandingPage'; // Assuming you have a LandingPage component
-import Card from './components/Card'; // Import the Card component
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
-      <Navbar />
-      <Card /> {/* Add the Card component */}
-      {/* Add other components or functions here as needed */}
+      <header className="App-header">
+        <Navbar />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
