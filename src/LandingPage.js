@@ -5,6 +5,7 @@ import './css/card.css';
 import './css/navbar.css';
 import './css/footer.css';
 import './css/menu.css';
+import './css/fixedButton.css'; 
 
 const LandingPage = () => {
   const changeFontSize = (action) => {
@@ -58,6 +59,21 @@ const LandingPage = () => {
           </div>
         </div>
       </header>
+
+      <div class="fixed-button" id="fixedButton">
+        <i class="fas fa-sign-in-alt"></i>
+        <span class="button-text" >e-contrib</span>
+      </div>
+
+      <div class="fixed-button-nfse" id="fixedButtonNfse">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <span class="button-text">NFS-e</span>
+      </div>
+
+      <div class="fixed-button-protocolo" id="fixedButtonProtocolo">
+        <i class="fas fa-file-alt"></i>
+        <span class="button-text">Protocolo</span>
+      </div>
     </>
   );
 };

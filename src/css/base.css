@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  color: #333; 
+  color: #202020; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,7 @@ li {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centralizar conteúdo */
   padding: 0 15px; 
 }
 
@@ -51,6 +51,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 
 @media (max-width: 1200px) {
   .container {
@@ -78,6 +79,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   outline: none; 
 }
 
+
 .form-control-dark {
   border-color: var(--bs-gray);
 }
@@ -87,13 +89,16 @@ input:focus, textarea:focus, select:focus, button:focus {
   box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
 }
 
+
 .text-small {
   font-size: 85%;
 }
 
+
 .dropdown-toggle:not(:focus) {
   outline: 0;
 }
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -109,6 +114,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
 }
 
+
 .b-example-divider {
   width: 100%;
   height: 3rem;
@@ -117,6 +123,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(235, 235, 235, 0.945), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
+
 
 .bi {
   vertical-align: -.125em;
@@ -151,34 +158,4 @@ a {
   text-decoration: none;
   color: inherit; 
   transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  color: #007bff; 
-  outline: none; 
-}
-
-
-.navbar .nav-link,
-.navbar .dropdown-item {
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis;
-}
-
-@media (max-width: 768px) {
-  .navbar .nav-link,
-  .navbar .dropdown-item {
-    white-space: normal; 
-  }
-}
-
-
-.navbar .nav-item {
-  max-width: 100%; 
-}
-
-.navbar .dropdown-menu {
-  max-width: 100%; 
 }

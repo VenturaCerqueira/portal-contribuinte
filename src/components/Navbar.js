@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item"><a className="nav-link" href="/"><i className="fas fa-home"></i> Início</a></li>
               <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-user"></i> Contribuinte
                 </button>
                 <ul className="dropdown-menu">
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-building"></i> Mobiliário
                 </button>
                 <ul className="dropdown-menu">
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-home"></i> Imobiliário
                 </button>
                 <ul className="dropdown-menu">
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-folder"></i> Protocolo
                 </button>
                 <ul className="dropdown-menu">
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fas fa-receipt"></i> NFS-e
                 </button>
                 <ul className="dropdown-menu">
@@ -68,12 +68,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Botão Fixo "Acessar" */}
-      <div className="fixed-button" id="fixedButton">
-        <i className="fas fa-sign-in-alt"></i>
-        <span className="button-text">e-contrib</span>
-      </div>
     </>
   );
 };

@@ -1,80 +1,96 @@
-/* .card */
 .card {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-header {
+}
+
+.card-header {
     background-color: #f8f9fa;
     font-weight: bold;
     font-size: 16px;
     padding: 15px;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .card-body {
+}
+
+.card-body {
     padding: 20px;
     font-size: 14px;
     color: #495057;
-  }
-  
-  .card-footer {
+}
+
+.card-footer {
     background-color: #f8f9fa;
     text-align: center;
     padding: 10px;
     border-top: 1px solid #ddd;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     font-size: 14px;
     color: #6c757d;
-  }
-  
-  .card-img-top {
+}
+
+.card-img-top {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-  
-  .card-link {
+}
+
+.card-link {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  .card-link:hover {
+}
+
+.card-link:hover {
     text-decoration: underline;
-  }
-  
-  /* Responsividade para telas pequenas */
-  @media (max-width: 768px) {
+}
+
+.display-5 {
+    background: linear-gradient(135deg, #0052cc, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap; /* Evita quebra de linha */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card-img {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.card-img.fade-out {
+    opacity: 0;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
     .card {
-      margin: 10px 0;
+        margin: 10px 0;
     }
-  
+
     .card-header, .card-footer {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     .card-body {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .card-title {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
+}

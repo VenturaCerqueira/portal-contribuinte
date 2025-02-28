@@ -1,3 +1,4 @@
+
 /* Navbar */
 .navbar {
   background: rgba(0, 123, 255, 0.9);
@@ -103,7 +104,7 @@
 
 .navbar .dropdown-menu .dropdown-item:hover {
   background-color: #f8f9fa; 
-  color: black; 
+  color: rgb(253, 253, 253); 
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -162,19 +163,62 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remover borda */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 50%; /* Bordas arredondadas para formato redondo */
+  cursor: pointer; /* Cursor de ponteiro */
   display: flex;
   align-items: center;
-  cursor: pointer;
+  justify-content: center;
+  width: 50px; /* Largura inicial */
+  height: 50px; /* Altura inicial */
+  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  overflow: hidden; /* Esconder o texto inicialmente */
+}
+
+.fixed-button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  width: auto; /* Expandir largura */
+  padding: 10px 20px; /* Espaçamento interno ao expandir */
+  border-radius: 25px; /* Bordas arredondadas ao expandir */
 }
 
 .fixed-button .button-text {
-  margin-left: 10px;
+  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+  white-space: nowrap; /* Evitar quebra de linha no texto */
+}
+/* Estilos para o botão fixo "Acessar" */
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remover borda */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 50%; /* Bordas arredondadas para formato redondo */
+  cursor: pointer; /* Cursor de ponteiro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Largura inicial */
+  height: 50px; /* Altura inicial */
+  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transição suave */
+  overflow: hidden; /* Esconder o texto inicialmente */
 }
 
-.fixed-button i {
-  font-size: 1.2rem;
+.fixed-button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  width: auto; /* Expandir largura */
+  padding: 10px 20px; /* Espaçamento interno ao expandir */
+  border-radius: 25px; /* Bordas arredondadas ao expandir */
+}
+
+.fixed-button .button-text {
+  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+  white-space: nowrap; /* Evitar quebra de linha no texto */
 }
