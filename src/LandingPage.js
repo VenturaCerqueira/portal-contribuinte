@@ -41,7 +41,7 @@ const LandingPage = () => {
             <a href="https://www.riachaodojacuipe.ba.gov.br/" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
               <img src="/src/img/icons/logo.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="220" />
             </a>
-            <h1 className="header-title text-center mx-auto position-absolute">Secretaria Municipal da Fazenda </h1>
+            <div className="secretaria-nome">Secretaria Municipal da Fazenda</div>
             <div className="icon-container d-flex align-items-center">
               <a href="https://github.com/seu-perfil" target="_blank" className="text-white me-3">
                 <i className="bi bi-whatsapp fa-lg"></i>
@@ -60,19 +60,19 @@ const LandingPage = () => {
         </div>
       </header>
 
-      <div class="fixed-button" id="fixedButton">
-        <i class="fas fa-sign-in-alt"></i>
-        <span class="button-text" >e-contrib</span>
+      <div className="fixed-button" id="fixedButton">
+        <i className="fas fa-sign-in-alt"></i>
+        <span className="button-text">e-contrib</span>
       </div>
 
-      <div class="fixed-button-nfse" id="fixedButtonNfse">
-        <i class="fas fa-file-invoice-dollar"></i>
-        <span class="button-text">NFS-e</span>
+      <div className="fixed-button-nfse" id="fixedButtonNfse">
+        <i className="fas fa-file-invoice-dollar"></i>
+        <span className="button-text">NFS-e</span>
       </div>
 
-      <div class="fixed-button-protocolo" id="fixedButtonProtocolo">
-        <i class="fas fa-file-alt"></i>
-        <span class="button-text">Protocolo</span>
+      <div className="fixed-button-protocolo" id="fixedButtonProtocolo">
+        <i className="fas fa-file-alt"></i>
+        <span className="button-text">Protocolo</span>
       </div>
     </>
   );

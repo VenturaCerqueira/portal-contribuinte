@@ -1,4 +1,3 @@
-
 /* Navbar */
 .navbar {
   background: rgba(0, 123, 255, 0.9);
@@ -6,58 +5,51 @@
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0; /* Remove todo o padding da navbar */
 }
-
 
 .navbar.scrolled {
   background: linear-gradient(135deg, #0052cc, #007bff);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
-
 
 .navbar .navbar-nav {
   display: flex;
-  padding: 0;
   margin: 0;
 }
-
 
 .navbar .nav-item {
   position: relative;
   margin: 0 15px;
 }
 
-
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 10px 15px;
   position: relative;
   transition: color 0.3s;
   display: flex;
   align-items: center;
+  padding: 10px 15px; /* Ajustar padding dos links da navbar */
 }
-
 
 /* Estilos para os links da navbar */
 .navbar .nav-link {
-  color: white; 
+  color: white;
 }
 
 .navbar .nav-link:hover {
-  color: #f8f9fa; 
+  color: #f8f9fa;
 }
-
 
 .navbar a i {
   margin-right: 8px;
 }
-
 
 .navbar a:hover {
   color: #e6e6e6;
@@ -78,7 +70,6 @@
   width: 100%;
 }
 
-
 .navbar .dropdown-menu {
   background-color: #007bff;
   border: none;
@@ -89,13 +80,11 @@
   min-width: 150px;
   display: none;
   z-index: 1000;
-  padding: 0;
 }
 
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 
 /* Estilos para os itens do dropdown */
 .navbar .dropdown-menu .dropdown-item {
@@ -103,13 +92,13 @@
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa; 
-  color: rgb(253, 253, 253); 
+  background-color: #f8f9fa;
+  color: rgb(253, 253, 253);
 }
 
 .navbar .dropdown-menu .dropdown-item {
   color: white;
-  padding: 10px;
+  padding: 10px; /* Ajustar padding dos itens do dropdown */
   display: block;
   transition: background 0.3s;
   text-align: left;
@@ -121,43 +110,40 @@
   background: #0052cc;
 }
 
-
 /* Estilos para os botões da navbar */
 .navbar .nav-link.dropdown-toggle {
-  color: white; 
+  color: white;
 }
 
 .navbar .nav-link.dropdown-toggle:hover {
-  color: #f8f9fa; 
+  color: #f8f9fa;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .navbar-nav {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .navbar .nav-item {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   .navbar .dropdown-menu {
-      position: static;
-      display: none;
+    position: static;
+    display: none;
   }
 
   .navbar .dropdown.active .dropdown-menu {
-      display: block;
+    display: block;
   }
 }
 
-
-
 /* Estilos para o botão fixo "Acessar" */
 .fixed-button {
   position: fixed;
@@ -166,7 +152,7 @@
   background-color: #007bff; /* Cor de fundo */
   color: #fff; /* Cor do texto */
   border: none; /* Remover borda */
-  padding: 10px; /* Espaçamento interno */
+  padding: 0; /* Remove todo o padding do botão fixo */
   font-size: 16px; /* Tamanho da fonte */
   border-radius: 50%; /* Bordas arredondadas para formato redondo */
   cursor: pointer; /* Cursor de ponteiro */
@@ -177,6 +163,7 @@
   height: 50px; /* Altura inicial */
   transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transição suave */
   overflow: hidden; /* Esconder o texto inicialmente */
+  opacity: 0.8; /* Ajustar opacidade */
 }
 
 .fixed-button:hover {
@@ -184,41 +171,40 @@
   width: auto; /* Expandir largura */
   padding: 10px 20px; /* Espaçamento interno ao expandir */
   border-radius: 25px; /* Bordas arredondadas ao expandir */
+  opacity: 1; /* Ajustar opacidade ao passar o mouse */
 }
 
 .fixed-button .button-text {
   margin-left: 10px; /* Espaçamento entre o ícone e o texto */
   white-space: nowrap; /* Evitar quebra de linha no texto */
 }
-/* Estilos para o botão fixo "Acessar" */
-.fixed-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007bff; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  border: none; /* Remover borda */
-  padding: 10px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  border-radius: 50%; /* Bordas arredondadas para formato redondo */
-  cursor: pointer; /* Cursor de ponteiro */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px; /* Largura inicial */
-  height: 50px; /* Altura inicial */
-  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transição suave */
-  overflow: hidden; /* Esconder o texto inicialmente */
-}
 
-.fixed-button:hover {
-  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-  width: auto; /* Expandir largura */
-  padding: 10px 20px; /* Espaçamento interno ao expandir */
-  border-radius: 25px; /* Bordas arredondadas ao expandir */
-}
+/* Ajustes para telas menores */
+@media (max-width: 390px) {
+  .fixed-button {
+    width: 40px; /* Ajustar largura para telas menores */
+    height: 40px; /* Ajustar altura para telas menores */
+    font-size: 14px; /* Ajustar tamanho da fonte para telas menores */
+    opacity: 0.8; /* Ajustar opacidade */
+  }
 
-.fixed-button .button-text {
-  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
-  white-space: nowrap; /* Evitar quebra de linha no texto */
+  .fixed-button .button-text {
+    display: none; /* Esconder o texto do botão em telas menores */
+  }
+
+  .icon-container a {
+    font-size: 0.8em; /* Ajustar tamanho da fonte dos ícones */
+  }
+
+  .top-accessibility-bar {
+    font-size: 12px; /* Ajustar tamanho da fonte da barra de acessibilidade */
+  }
+
+  .top-accessibility-bar a {
+    font-size: 12px; /* Ajustar tamanho da fonte dos links da barra de acessibilidade */
+  }
+
+  .top-accessibility-bar .fw-bold {
+    font-size: 12px; /* Ajustar tamanho da fonte do texto em negrito */
+  }
 }
