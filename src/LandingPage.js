@@ -26,9 +26,9 @@ const LandingPage = () => {
       <div className="top-accessibility-bar py-1 px-3">
         <div className="container d-flex justify-content-start align-items-center gap-4">
           <span className="fw-bold">ACESSIBILIDADE</span>
-          <a href="#" className="text-decoration-none" onClick={() => changeFontSize('decrease')}>A-</a>
-          <a href="#" className="text-decoration-none" onClick={() => changeFontSize('reset')}>A</a>
-          <a href="#" className="text-decoration-none" onClick={() => changeFontSize('increase')}>A+</a>
+          <a href="https://twitter.com/seu-perfil" className="text-decoration-none" onClick={() => changeFontSize('decrease')}>A-</a>
+          <a href="https://twitter.com/seu-perfil" className="text-decoration-none" onClick={() => changeFontSize('reset')}>A</a>
+          <a href="https://twitter.com/seu-perfil" className="text-decoration-none" onClick={() => changeFontSize('increase')}>A+</a>
           <span className="mx-2">|</span>
           <a href="https://www.riachaodojacuipe.ba.gov.br/acessoainformacao/" className="text-decoration-none">
             <i className="fas fa-info-circle"></i> ACESSO À INFORMAÇÃO
@@ -49,7 +49,7 @@ const LandingPage = () => {
               <a href="https://twitter.com/seu-perfil" target="_blank" className="text-white me-3">
                 <i className="bi bi-instagram fa-lg"></i>
               </a>
-              <a href="#" className="text-white me-3">
+              <a href="https://twitter.com/seu-perfil" className="text-white me-3">
                 <i className="bi bi-facebook fa-lg"></i>
               </a>
             </div>
