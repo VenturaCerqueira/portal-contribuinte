@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 0; /* Remove todo o padding da navbar */
+  padding: 0; 
 }
 
 .navbar.scrolled {
@@ -149,62 +149,62 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  border: none; /* Remover borda */
-  padding: 0; /* Remove todo o padding do botão fixo */
-  font-size: 16px; /* Tamanho da fonte */
-  border-radius: 50%; /* Bordas arredondadas para formato redondo */
-  cursor: pointer; /* Cursor de ponteiro */
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  padding: 0; 
+  font-size: 16px; 
+  border-radius: 50%; 
+  cursor: pointer; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Largura inicial */
-  height: 50px; /* Altura inicial */
-  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transição suave */
-  overflow: hidden; /* Esconder o texto inicialmente */
-  opacity: 0.8; /* Ajustar opacidade */
+  width: 50px; 
+  height: 50px; 
+  transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease; 
+  overflow: hidden; 
+  opacity: 0.8; 
 }
 
 .fixed-button:hover {
-  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-  width: auto; /* Expandir largura */
-  padding: 10px 20px; /* Espaçamento interno ao expandir */
-  border-radius: 25px; /* Bordas arredondadas ao expandir */
-  opacity: 1; /* Ajustar opacidade ao passar o mouse */
+  background-color: #0056b3; 
+  width: auto; 
+  padding: 10px 20px; 
+  border-radius: 25px; 
+  opacity: 1; 
 }
 
 .fixed-button .button-text {
-  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
-  white-space: nowrap; /* Evitar quebra de linha no texto */
+  margin-left: 10px; 
+  white-space: nowrap; 
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 390px) {
   .fixed-button {
-    width: 40px; /* Ajustar largura para telas menores */
-    height: 40px; /* Ajustar altura para telas menores */
-    font-size: 14px; /* Ajustar tamanho da fonte para telas menores */
-    opacity: 0.8; /* Ajustar opacidade */
+    width: 40px; 
+    height: 40px; 
+    font-size: 14px; 
+    opacity: 0.8; 
   }
 
   .fixed-button .button-text {
-    display: none; /* Esconder o texto do botão em telas menores */
+    display: none; 
   }
 
   .icon-container a {
-    font-size: 0.8em; /* Ajustar tamanho da fonte dos ícones */
+    font-size: 0.8em; 
   }
 
   .top-accessibility-bar {
-    font-size: 12px; /* Ajustar tamanho da fonte da barra de acessibilidade */
+    font-size: 12px; 
   }
 
   .top-accessibility-bar a {
-    font-size: 12px; /* Ajustar tamanho da fonte dos links da barra de acessibilidade */
+    font-size: 12px; 
   }
 
   .top-accessibility-bar .fw-bold {
-    font-size: 12px; /* Ajustar tamanho da fonte do texto em negrito */
+    font-size: 12px; 
   }
 }

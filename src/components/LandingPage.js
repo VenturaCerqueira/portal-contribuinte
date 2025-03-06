@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/base.css';
 import './css/header.css';
 import './css/card.css';
@@ -73,6 +74,16 @@ const LandingPage = () => {
       <div className="fixed-button-protocolo" id="fixedButtonProtocolo">
         <i className="fas fa-file-alt"></i>
         <span className="button-text">Protocolo</span>
+      </div>
+
+      <div className="menu">
+        <ul>
+          <li><Link to="/emissao-cnd">EMISSÃO DE CND</Link></li>
+          <li><Link to="/validacao-cnd">VALIDAÇÃO CND</Link></li>
+          <li><Link to="/segunda-via-certidao">2ª VIA CERTIDÃO DE BAIXA DE ATIVIDADE</Link></li>
+          <li><Link to="/consultar-autenticidade">CONSULTAR AUTENTICIDADE CERTIDÃO BAIXA DE ATIVIDADE</Link></li>
+          <li><Link to="/declaracao-nao-inscrito">DECLARAÇÃO DE NÃO INSCRITO</Link></li>
+        </ul>
       </div>
     </>
   );
