@@ -8,20 +8,7 @@ function loadComponent(url, elementId) {
       .catch(error => console.error("Erro ao carregar o componente:", error));
   }
   
-  // Exibir o loading antes de carregar os componentes
-  loadComponent('src/components/loading.html', 'loading-container').then(() => {
-    // Carregar os outros componentes
-    Promise.all([
-      loadComponent('src/components/navbar.html', 'navbar-container'),
-      loadComponent('src/components/header.html', 'header-container'),
-      loadComponent('src/components/card.html', 'card-container'),
-      loadComponent('src/components/footer.html', 'footer-container')
-    ]).then(() => {
-      // Esconder o loading após tudo carregar
-      document.getElementById('loading-container').style.display = 'none';
-    });
-  });
-  
+ 
   // Função para adicionar/remover classe 'fixed-top' com base no scroll
   function handleNavbarScroll() {
     const navbar = document.querySelector('.navbar');
